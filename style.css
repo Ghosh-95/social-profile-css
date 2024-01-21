@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --color-background-general: #232323;
+    --color-active-link: #dcff5b;
+    --color-highlight-text: #9cb649;
+    --color-background-profile: #141414;
+    --color-background-link: #333333;
+    --color-gray-text: #afafaf;
+    --color-text-white: #e7e4e4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: var(--color-background-general);
+    font-family: 'Inter', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text-white);
+}
+
+#hero-section {
+    max-width: 1440px;
+    height: 100vh;
+    width: max-content;
+    margin: 0 auto;
+    background-color: var(--color-background-profile);
+    padding: 0 1.4rem;
+    color: var(--color-text-white);
+}
+
+.profile-wrapper {
+    text-align: center;
+    margin: 2.5rem 0;
+    background-color: var(--color-background-general);
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-container img {
+    width: 30%;
+    border-radius: 100%;
+}
+
+.user-address {
+    font-size: 0.9rem;
+    color: var(--color-highlight-text);
+}
+
+.user-about {
+    font-size: 0.9rem;
+    color: var(--color-gray-text);
+}
+
+.links {
+    margin-block: 2rem;
+    width: 100%;
+}
+
+.links li:not(:last-child) {
+    margin-bottom: 0.8rem;
+}
+
+.links li {
+    background-color: var(--color-background-link);
+    cursor: pointer;
+    padding: 0.9rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: 0.2s all ease-in-out;
+}
+
+.links li:hover {
+    background-color: var(--color-active-link);
+}
+
+.links li:hover a {
+    color: var(--color-background-profile);
+}
+
+.attribution {
+    text-align: center;
+    margin-block: 1rem;
+    color: var(--color-text-white);
+}
+
+.attribution a {
+    color: var(--color-highlight-text);
+    transition: 0.2s all ease-in-out;
+}
+
+.attribution a:hover {
+    color: var(--color-active-link);
+}
